@@ -16,11 +16,21 @@ var app = app || {};
 			completed: false
 		},
 
+    idAttribute: "url",
+
+    url: function() { 
+      if( this.isNew() ){
+        return this.collection.url;
+      }else{
+        return this.get('url'); 
+      }
+    },
+
 		// Toggle the `completed` state of this todo item.
 		toggle: function () {
 			this.save({
 				completed: !this.get('completed')
-			});
+			},{patch:true});
 		}
 	});
 })();

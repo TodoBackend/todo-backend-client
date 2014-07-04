@@ -92,7 +92,7 @@ var app = app || {};
 			}
 
 			if (trimmedValue) {
-				this.model.save({ title: trimmedValue });
+				this.model.save({ title: trimmedValue },{patch:true});
 
 				if (value !== trimmedValue) {
 					// Model values changes consisting of whitespaces only are

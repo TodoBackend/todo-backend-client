@@ -2,10 +2,20 @@
 <html lang="en" data-framework="backbonejs">
 	<head>
 		<meta charset="utf-8">
-		<title>Backbone.js • TodoMVC</title>
+		<title>Todo-Backend client</title>
 		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+		<link rel="stylesheet" href="css/chooser.css">
 	</head>
 	<body>
+
+    <section id="api-root">
+      <div class="wrapper">
+        <label for="api-root-url">Todo-Backend api root</label>
+        <input id="api-root-url" placeholder="e.g. http://todo-backend-sinatra.herokuapp.com/todos"></input>
+      </div>
+      <button>go</button>
+    </section>
+
 		<section id="todoapp">
 			<header id="header">
 				<h1>todos</h1>

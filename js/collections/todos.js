@@ -4,15 +4,13 @@ var app = app || {};
 (function () {
 	'use strict';
 
+
 	// Todo Collection
 	// ---------------
 
-	var Todos = Backbone.Collection.extend({
+	app.Todos = Backbone.Collection.extend({
 		// Reference to this collection's model.
 		model: app.Todo,
-
-    // FIXME: this should be configurable
-    url: "http://todo-backend-sinatra.herokuapp.com/todos",
 
 		// Filter down the list of all todo items that are finished.
 		completed: function () {
@@ -33,7 +31,4 @@ var app = app || {};
 		// Todos are sorted by their original insertion order.
 		comparator: 'order'
 	});
-
-	// Create our global collection of **Todos**.
-	app.todos = new Todos();
 })();

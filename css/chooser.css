@@ -1,0 +1,50 @@
+#api-root {
+  font: 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  margin: 2em 0;
+  position: relative;
+}
+
+#api-root .wrapper {
+  border: 1px black dotted;
+  padding: 1em 0.5em 1em 2em;
+  position: relative;
+}
+
+#api-root label {
+  font-size: 30px;
+  font-style: italic;
+  position: absolute;
+  top: -25px;
+  left: 10px;
+  padding: 0 8px;
+	background: #eaeaea url('../bower_components/todomvc-common/bg.png');
+}
+
+#api-root input {
+  font: inherit;
+  width: 95%;
+}
+
+#api-root button {
+  border: none;
+  font: inherit;
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 0.4em;
+  margin-right: 0;
+
+  float: right;
+
+  padding: 0.2em 0.6em;
+  background-color: rgb(48, 173, 48); 
+  color: white;
+
+  -webkit-box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    2px 2px 1px rgba(50, 50, 50, 0.75);
+  box-shadow:         2px 2px 1px rgba(50, 50, 50, 0.75);
+}
+#api-root button:hover {
+  background-color: rgb(8, 123, 8); 
+}
+

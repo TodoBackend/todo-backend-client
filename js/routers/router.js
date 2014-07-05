@@ -6,7 +6,7 @@ var app = app || {};
 
 	// Todo Router
 	// ----------
-	var TodoRouter = Backbone.Router.extend({
+	app.TodoRouter = Backbone.Router.extend({
 		routes: {
 			'*filter': 'setFilter'
 		},
@@ -20,7 +20,4 @@ var app = app || {};
 			app.todos.trigger('filter');
 		}
 	});
-
-	app.TodoRouter = new TodoRouter();
-	Backbone.history.start();
 })();

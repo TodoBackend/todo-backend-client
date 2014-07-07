@@ -35,7 +35,7 @@ $(function () {
 
 	// Create our global collection of **Todos**.
 	app.todos = new app.Todos();
-  app.todos.url = "http://todo-backend-sinatra.herokuapp.com/todos";
+  app.todos.url = apiRootUrl;
 
 	app.TodoRouter = new app.TodoRouter();
 	Backbone.history.start();

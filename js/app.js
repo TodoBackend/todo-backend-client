@@ -33,6 +33,8 @@ $(function () {
   }
   $("#api-root").hide();
 
+  $("#target-info .target-url").text(apiRootUrl);
+
 	// Create our global collection of **Todos**.
 	app.todos = new app.Todos();
   app.todos.url = apiRootUrl;

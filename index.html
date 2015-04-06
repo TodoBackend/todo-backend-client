@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Todo-Backend client</title>
-		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+		<link rel="stylesheet" href="css/vendor/todomvc-common.css">
 		<link rel="stylesheet" href="css/chooser.css">
 	</head>
 	<body>
@@ -63,10 +63,11 @@
 			<button id="clear-completed">Clear completed (<%= completed %>)</button>
 			<% } %>
 		</script>
-		<script src="bower_components/todomvc-common/base.js"></script>
-		<script src="bower_components/jquery/jquery.js"></script>
-		<script src="bower_components/underscore/underscore.js"></script>
-		<script src="bower_components/backbone/backbone.js"></script>
+		<script src="js/vendor/todomvc-common.js"></script>
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/vendor/underscore.js"></script>
+		<script src="js/vendor/backbone.js"></script>
+
 		<script src="js/models/todo.js"></script>
 		<script src="js/collections/todos.js"></script>
 		<script src="js/views/todo-view.js"></script>

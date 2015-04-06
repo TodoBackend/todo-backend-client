@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "a TodoMVC client which uses a TodoBackend implementation to store its todos.",
   "scripts": {
-    "prepublish": "grunt"
+    "prepublish": "grunt",
+    "start": "open index.html"
   },
   "repository": {
     "type": "git",

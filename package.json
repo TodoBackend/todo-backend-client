@@ -17,6 +17,7 @@
   "homepage": "https://github.com/TodoBackend/todo-backend-client",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-bowercopy": "^1.2.0"
+    "grunt-bowercopy": "^1.2.0",
+    "grunt-contrib-clean": "^0.6.0"
   }
 }

@@ -122,9 +122,7 @@ var app = app || {};
 			var completed = this.allCheckbox.checked;
 
 			app.todos.each(function (todo) {
-				todo.save({
-					completed: completed
-				});
+				todo.toggle();
 			});
 		}
 	});
